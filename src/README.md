@@ -1,6 +1,6 @@
 ### Weekly assignments
 Each week I will upload my answers to the given assignments here under the following names:
-- W1: _basic\_image\processing.ipynb_  
+- W1: _basic\_image\_processing.ipynb_  
 
 __Updating repo__  
 To run the scripts, I recommend cloning this repository and installing relevant dependencies in a virtual ennvironment:
