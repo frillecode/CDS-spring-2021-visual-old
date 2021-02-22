@@ -19,6 +19,13 @@ cd CDS-spring-2021-visual
 git pull origin main
 bash ./create_frille-visual_venv.sh
 ```
+If you run into issues with pandas not being installed correctly when creating the virtual environment, install pandas manually by running the following:
+```bash
+cd CDS-spring-2021-visual
+source frille-vis/bin/activate
+pip install pandas
+deactivate
+```
 
 
 ## Repo structure
