@@ -9,22 +9,22 @@ Each week I will upload my answers to the given assignment. These can be found i
 To run scripts within this repository, I recommend cloning the repository and installing relevant dependencies in a virtual ennvironment:
 
 ```bash
-git clone https://github.com/frillecode/CDS-spring-2021-visual.git
-cd CDS-spring-2021-visual
-bash ./create_frille-visual_venv.sh
+$ git clone https://github.com/frillecode/CDS-spring-2021-visual.git
+$ cd CDS-spring-2021-visual
+$ bash ./create_venv.sh
 ```
 From then on, every time you use it, make sure to update the repository and install any new dependencies:
 ```bash
-cd CDS-spring-2021-visual
-git pull origin main
-bash ./create_frille-visual_venv.sh
+$ cd CDS-spring-2021-visual
+$ git pull origin main
+$ bash ./create_venv.sh
 ```
-If you run into issues with pandas not being installed correctly when creating the virtual environment, install pandas manually by running the following:
+If you run into issues with some libraries/modules not being installed correctly when creating the virtual environment, install these manually by running the following:
 ```bash
-cd CDS-spring-2021-visual
-source frille-vis/bin/activate
-pip install pandas
-deactivate
+$ cd CDS-spring-2021-visual
+$ source frille-vis/bin/activate
+$ pip install {module_name}
+$ deactivate
 ```
 
 
@@ -34,7 +34,7 @@ This repository has the following directory structure:
 
 | Column | Description|
 |--------|:-----------|
-```data```| A folder to be used for sample datasets that we use in class.
+```data```| A folder to be used for datasets that I use in assignments.
 ```src``` | For Python scripts developed in class and as part of assignments.
 ```utils``` | Utility functions that are written by Ross, and which we'll use in class.
 
