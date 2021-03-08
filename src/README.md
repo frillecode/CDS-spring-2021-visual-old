@@ -35,6 +35,8 @@ $ deactivate
 __Running scripts__  
 After updating the repo (see above), you can run the .py-files from the command-line by writing the following:
 ``` bash
-$ cd CDS-spring-2021-visual/src
+$ cd CDS-spring-2021-visual 
+$ source frille-vis/bin/activate
+$ cd src
 $ python3 {filename].py
 ```
