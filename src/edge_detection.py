@@ -1,3 +1,4 @@
+#!/usr/bin/python
 """
 Script for loading an image with text, drawing a rectangular ROI around the middle of the image, crop the image to contain only the ROI, perform Canny edge detection and draw green contours around each letter. Each step (expect Canny) will output an .jpg-file.
 
@@ -33,17 +34,17 @@ def main():
     
     
     # 3) Apply Canny edge detection
-    grey = cv2.cvtColor(image_cropped, cv2.COLOR_BGR2GRAY) #turn image bw
-    blurred = cv2.GaussianBlur(grey, (5,5), 0) #blur the image to remove noise. Here, we use Gaussian blur
+    grey = cv2.cvtColor(image_cropped, cv2.COLOR_BGR2GRAY) #turning image to greyscale
+    blurred = cv2.GaussianBlur(grey, (5,5), 0) #blurring the image to remove noise. Here, we use Gaussian blur
     canny = cv2.Canny(blurred, 100, 150) #canny edge detection with a min threshold of 100 and max threshold of 150
     
    
     # 4) Draw green contours around letters in the cropped image
-    (cnts, _) = cv2.findContours(canny.copy(),        # find contours
+    (cnts, _) = cv2.findContours(canny.copy(),        #finding contours
                              cv2.RETR_EXTERNAL, 
                              cv2.CHAIN_APPROX_SIMPLE)
-    image_letters = cv2.drawContours(image_cropped.copy(), cnts, -1, (0, 255, 0), 1) #draw contours
-    save_image(image_letters, "image_letters")
+    image_letters = cv2.drawContours(image_cropped.copy(), cnts, -1, (0, 255, 0), 1) #drawing contours on copy of original image
+    save_image(image_letters, "image_letters") #saving image with contours
     
     
     
