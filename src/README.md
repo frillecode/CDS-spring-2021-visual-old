@@ -7,7 +7,7 @@ Each week I will upload my answers to the given assignments here under the follo
   - Results: _out/distances.csv_
 - __Assignment 3:__ 
   - Code: _edge\_detection.py_
-  - Results: _out/image\_ROI.jpg_ , _out/image\_cropped.jpg_ , _out/image\_letters.jpg_
+  - Results: _out/image\_with\_ROI.jpg_ , _out/image\_cropped.jpg_ , _out/image\_letters.jpg_
 
 
 __Updating repo__  
