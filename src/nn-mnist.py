@@ -95,7 +95,14 @@ class NeuralNetworkMNIST():
         print(f"\n EVALUATION METRICS: \n {cm}")
         # Save evaluation metrics
         self.save_eval_metrics(cm)
-    
+
+# Creating a function that checks whether a given value is between 0 and 1 and return an error if it is not. This is used to ensure that only a test_size-argument within the correct range can be parsed in the command-line. 
+def percentFloat(string):
+    value = float(string)
+    if value < 0 or value > 1:
+        raise argparse.ArgumentTypeError('Value has to be between 0 and 1')
+    return value           
+
     
 def main():
     ap = argparse.ArgumentParser(description="[INFO] This script uses the full MNIST data set, trains a Neural Network Classifier, and prints and saves the evaluation metrics to the terminal.") 
@@ -103,7 +110,7 @@ def main():
     ap.add_argument("-ts", 
             "--test_size", 
             required=False, 
-            type=float, 
+            type=percentFloat, 
             default=0.2, 
             help="float, proportional size of test set (must be number between 0 and 1)") 
     # Argument for specifying number and values of hidden layers
