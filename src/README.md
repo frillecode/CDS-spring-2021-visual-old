@@ -13,7 +13,7 @@ Each week I will upload my answers to the given assignments here under the follo
   - Code: _edge\_detection.py_
   - Results: _out/assignment3/_  
 - __Assignmetn 4:__  
-  - Data: inbuild _mnist_-dataset from ```sklearn```  
+  - Data: inbuilt 'mnist'-dataset from ```sklearn```  
   - Code: _nn-mnist.py_ , _lr-mnist.py_  
   - Results: _out/assignment4/_  
 
