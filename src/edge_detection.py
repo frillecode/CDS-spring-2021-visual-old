@@ -13,14 +13,14 @@ import numpy as np
 
 # Defining function for writing images
 def save_image(image, image_name):
-    outpath = os.path.join("out", f"{image_name}.jpg")
+    outpath = os.path.join("out", "assignment3", f"{image_name}.jpg")
     cv2.imwrite(outpath, image)
 
     
 # Defining main function which performs all tasks
 def main():
     # Reading image
-    image = cv2.imread(os.path.join("..", "data", "_We_Hold_These_Truths__at_Jefferson_Memorial_IMG_4729.jpeg"))
+    image = cv2.imread(os.path.join("..", "data", "assignment3", "_We_Hold_These_Truths__at_Jefferson_Memorial_IMG_4729.jpeg"))
      
     # 1) Drawing a green rectangle around ROI 
     x1, x2, y1, y2 = 1400, 2860, 870, 2800 #defining coordinates for start and end point of rectangle

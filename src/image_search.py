@@ -60,14 +60,14 @@ def chisqd_distance(target_image, path_to_images):
 # Function for writing df to .csv-file
 def write_csv(df):
         # Write dataframe to a .csv-file and save in folder "out"
-        outpath = os.path.join("out", "distances.csv")
+        outpath = os.path.join("out", "assignment2", "distances.csv")
         df.to_csv(outpath)
 
         
 # Defining main-function
 def main():
     # Choose target image
-    target_image_path = os.path.join("..", "data", "flower_data", "jpg", "image_0399.jpg")  #specify path to target image
+    target_image_path = os.path.join("..", "data", "assignment2", "jpg", "image_0399.jpg")  #specify path to target image
     
     # Apply function to calculate chi-squared distances to target image
     df = chisqd_distance(target_image = target_image_path, path_to_images = os.path.join("..", "data", "flower_data", "jpg")) 

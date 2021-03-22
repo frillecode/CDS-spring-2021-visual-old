@@ -1,14 +1,21 @@
 ## Weekly assignments
 Each week I will upload my answers to the given assignments here under the following names:
 - __Assignment 1:__   
+  - Data: _../data/assignment1/_ 
   - Code: _basic\_image\_processing.ipynb_  
-- __Assignment 2:__ 
+  - Results: _out/assignment1/_  
+- __Assignment 2:__  
+  - Data: _../data/assignment2/_ 
   - Code: _image\_search.py_   
-  - Results: _out/distances.csv_
-- __Assignment 3:__ 
+  - Results: _out/assignment2/_  
+- __Assignment 3:__  
+  - Data: _../data/assignment3/_ 
   - Code: _edge\_detection.py_
-  - Results: _out/image\_with\_ROI.jpg_ , _out/image\_cropped.jpg_ , _out/image\_letters.jpg_
-
+  - Results: _out/assignment3/_  
+- __Assignmetn 4:__  
+  - Data: inbuild _mnist_-dataset from ```sklearn```  
+  - Code: _nn-mnist.py_ , _lr-mnist.py_  
+  - Results: _out/assignment4/_  
 
 __Updating repo__  
 To run the scripts, I recommend cloning this repository and installing relevant dependencies in a virtual ennvironment:
